@@ -37,11 +37,11 @@ ruleTester.run('no-duplicate-directives', rule, {
   invalid: [
     {
       code: `<Button x-if={this.state.foo} x-if={this.state.bar} />`,
-      errors: [{ message: 'Avoid duplicate attribute: x-if' }]
+      errors: [{ message: 'Avoid duplicate directive: x-if' }]
     },
     {
       code: `<Button x-class={this.state.foo} x-class={this.state.bar} />`,
-      errors: [{ message: 'Avoid duplicate attribute: x-class' }]
+      errors: [{ message: 'Avoid duplicate directive: x-class' }]
     }
   ]
 });
