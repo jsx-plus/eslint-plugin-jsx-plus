@@ -42,8 +42,16 @@ Then configure the rules you want to use under the rules section.
 ```
 
 ## Supported Rules
+- jsx-plus/no-duplicate-directives
+- jsx-plus/valid-x-class
+- jsx-plus/valid-x-memo
+- jsx-plus/valid-x-for
+- jsx-plus/valid-x-slot
+- jsx-plus/no-duplicate-declaration-for-x-slot
+- jsx-plus/forbid-use-x-elseif-alone
+- jsx-plus/forbid-use-x-else-alone
+- jsx-plus/forbid-assignment-to-x-else
 
-* Fill in provided rules here
 
 
 
