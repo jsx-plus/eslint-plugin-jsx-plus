@@ -1,11 +1,12 @@
 {
   "name": "eslint-plugin-jsx-plus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "eslint plugin for jsx plus",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "jsx-plus"
   ],
   "author": "tony7lee",
   "main": "lib/index.js",
