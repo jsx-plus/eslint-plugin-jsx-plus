@@ -28,6 +28,9 @@ ruleTester.run('valid-x-for', rule, {
   valid: [
     {
       code: `<View x-for={(item, key) in foo}>key: {key}, item: {item}</View>`
+    },
+    {
+      code: `<View x-for={item in foo}>item: {item}</View>`
     }
   ],
 
@@ -36,7 +39,7 @@ ruleTester.run('valid-x-for', rule, {
       code: `<View x-for></View>`,
       errors: [
         {
-          message: `x-for directive need a expression like: x-for={(item, index) in this.state.foo}`
+          message: `x-for directive need a expression e.g. x-for={(item, index) in this.state.foo}`
         }
       ]
     },
@@ -45,6 +48,14 @@ ruleTester.run('valid-x-for', rule, {
       errors: [
         {
           message: `'in' syntax is necessary to x-for directive`
+        }
+      ]
+    },
+    {
+      code: `<View x-for={1 in this.state.foo}></View>`,
+      errors: [
+        {
+          message: `variables is necessary to x-for directive, e.g. x-for={(item, index) in this.state.foo}, x-for={item in this.state.foo}`
         }
       ]
     },
