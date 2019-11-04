@@ -24,6 +24,10 @@ Add `jsx-plus` to the plugins section of your `.eslintrc` configuration file. Yo
 
 ```json
 {
+    "extends": [
+        "react-app",
+        "plugin:jsx-plus/recommended"
+    ],
     "plugins": [
         "jsx-plus"
     ]
