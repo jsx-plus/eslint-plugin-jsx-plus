@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jsx-plus",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "eslint plugin for jsx plus",
   "keywords": [
     "eslint",
